@@ -1,9 +1,9 @@
 import streamlit as st
-
-def Setting():
-    st.set_page_config(
-        page_title= "",
-    )
+from front.page import Setting
+from front.sidebar import Sidebar
 
 if __name__ == "__main__":
-    Setting()
+    Setting(
+        name= "Main Page",
+    )
+    Sidebar()

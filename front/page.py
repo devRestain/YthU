@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 def Setting(name):
     st.set_page_config(
         page_title="We Always YthU",
@@ -8,7 +9,7 @@ def Setting(name):
         body="We Always YthU",
     )
     st.subheader(
-        body= name,
+        body=name,
     )
     if "test" not in st.session_state:
         st.session_state.test = ""

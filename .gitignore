@@ -1,4 +1,6 @@
 .env
 .streamlit
 .cache
+.python-version
+.venv
 __pycache__

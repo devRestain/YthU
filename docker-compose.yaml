@@ -5,5 +5,7 @@ services:
       - 8080:80
     volumes:
       - /mnt/c/foryu/YthU:/usr/src/app
+    env_file:
+      - .env
     stdin_open: true 
     tty: true

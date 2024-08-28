@@ -1,0 +1,9 @@
+services:
+  ythu_test:
+    image: ythut
+    ports:
+      - 8080:80
+    volumes:
+      - /mnt/c/foryu/YthU:/usr/src/app
+    stdin_open: true 
+    tty: true

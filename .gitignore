@@ -3,4 +3,5 @@
 .cache
 .python-version
 .venv
+.dockerignore
 __pycache__

@@ -1,6 +1,6 @@
 services:
-  ythu_test:
-    image: ythut
+  dev:
+    image: ythu:0.1
     ports:
       - 8080:80
     volumes:

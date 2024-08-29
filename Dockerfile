@@ -6,7 +6,10 @@ COPY . .
 RUN mkdir .cache .streamlit
 
 # Dependancy control with poetry 
-RUN pip install poetry
-RUN poetry install
+RUN apt-get update \
+ && apt-get install -y curl \
+ && curl -sSL https://install.python-poetry.org | python3 - \
+ && export PATH="/root/.local/bin:$PATH" \
+ && poetry install
 
 EXPOSE 8080
